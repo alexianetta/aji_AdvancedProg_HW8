@@ -1,0 +1,3 @@
+char
+8
+C O M P U T E R
