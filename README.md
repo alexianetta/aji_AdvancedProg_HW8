@@ -10,7 +10,7 @@ BST is a node-based data structure, as shown in the image below. Left nodes are 
 
 ![bst-21](https://github.com/sskeme/eeee346-s24-hw8/assets/154963758/129f1672-8a92-40b9-ac8d-793921339098)
 
-You will be implementing an iterative insertion operation. A recursive implementation tends to be easier to code but introduces heavy stack usage due to recursion. You can use the code below to adapt it to the C++ classes required in this homework assignment.
+You will be implementing an iterative insertion operation. A recursive implementation tends to be easier to code but introduces heavy stack usage. You can use the code below to adapt it to the C++ class required in this homework assignment.
 
 ```
 void insert(Node* root, int key) {
