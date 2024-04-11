@@ -1,0 +1,1 @@
+Traversal result: C E M O P R T U 
