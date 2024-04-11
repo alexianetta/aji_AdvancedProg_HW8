@@ -44,8 +44,8 @@ There are several ways to traverse a BST. In this homework assignment, the depth
 
 # Tasks
 
-* Convert `Node.h` and `BinarySearchTree.h` to use a template parameter instead of `int`.
-  * Nodes are implemented by using shared_pointers. Hint: `shared_ptr<Node<int>>` is a shared pointer pointing to Node storing an int. Convert this for a template parameter.
+* Convert `Node.h` and `BinarySearchTree.h` to use a template parameter T instead of `int`.
+  * Note that nodes are implemented by using shared_pointers. Hint: `shared_ptr<Node<int>>` is a shared pointer pointing to an object of Node storing an int. Convert this for a template parameter.
 * Implement all member functions of the class template Node in `Node.h`.
 * Implement the insert() member function of the class template BinarySearchTree in `BinarySearchTree.h`. Recall that member function declarations and member function definitions of a class template must be contained in the same file, which is why they are in the same file.
 
@@ -74,7 +74,7 @@ Output (printed) messages will be written in the `result.txt` file.
 
 * Line 1: data type (int or char)
 * Line 2: data count (or the number of nodes)
-* Line 3: data to insert to the BST
+* Line 3: data to be inserted into the BST
 
 Example:
 
