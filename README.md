@@ -21,6 +21,7 @@ void insert(Node* root, int key) {
   }
   Node* prev = NULL;
   Node* temp = root;
+  // go to the correct position for inserting the new node
   while (temp) {
     if(temp->val > key) {
       prev = temp;
@@ -30,6 +31,7 @@ void insert(Node* root, int key) {
       temp = temp->right;
     }
   }
+  // insert the new node as a left child or a right child of the prev (parent) node
   if(prev->val > key) {
     prev->left = node;
   } else {
