@@ -6,54 +6,77 @@
 using namespace std;
 
 /*TODO: convert the Node class, including its member functions, for a template parameter*/
-
+template <class T>
 class Node {
-  int data;
-  shared_ptr<Node> left;
-  shared_ptr<Node> right;
+  T data;
+  shared_ptr<Node<T>> left;
+  shared_ptr<Node<T>> right;
 
 public:
   /**
    * constructor
    * @param data: the data to be stored in the node
    */
-  Node(int data) : data(data) {}
+  Node(T data) : data(data) {}
 
   /**
    * get the data stored in the node
    * @return the data stored in the node
    */
-  int getData() { /*TODO: write your code*/ }
+  T getData() { /*TODO: write your code*/
+  return data;
+  
+   }
 
   /**
    * set the data stored in the node
    * @param data: the data to be stored in the node
    */
-  void setData(int data) { /*TODO: write your code*/ }
+  void setData(T data) { /*TODO: write your code*/
+  
+  this->data = data;
+
+   }
 
   /**
    * get the left child node
    * @return the left child node
    */
-  shared_ptr<Node> getLeft() { /*TODO: write your code*/ }
+  shared_ptr<Node<T>> getLeft() { /*TODO: write your code*/
+    
+    return left;
+
+     }
 
   /**
    * get the right child node
    * @return the right child node
    */
-  shared_ptr<Node> getRight() { /*TODO: write your code*/ }
+  shared_ptr<Node<T>> getRight() { /*TODO: write your code*/
+  
+    return right;
+  
+   }
 
   /**
    * set the left child node
    * @param node: the node to be set as the left child
    */
-  void setLeft(shared_ptr<Node> node) { /*TODO: write your code*/ }
+  void setLeft(shared_ptr<Node<T>> node) { /*TODO: write your code*/
+  
+    left = node;
+  
+   }
 
   /**
    * set the right child node
    * @param node: the node to be set as the right child
    */
-  void setRight(shared_ptr<Node> node) { /*TODO: write your code*/ }
+  void setRight(shared_ptr<Node<T>> node) { /*TODO: write your code*/
+  
+    right = node;
+  
+   }
 };
 
 #endif //NODE_H__
